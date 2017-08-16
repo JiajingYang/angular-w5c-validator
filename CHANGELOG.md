@@ -1,3 +1,23 @@
+## v2.5.4
+1. 修复 https://github.com/why520crazy/angular-w5c-validator/issues/84
+
+## v2.5.3
+fix error for v2.5.2
+
+## v2.5.2
+支持显示指定的 form 元素错误信息, 比如服务端响应用户名输入失败等  `formCtrl.setElementErrorMessage('name','注册失败！')`
+
+## v2.5.1
+支持单独验证某个表单元素  `formCtrl.validateElement('name')`
+
+## v2.5.0
+w5cFormSubmit 指令添加 error-callback 函数，当点击提交按钮验证失败后调用该函数，并把 $errors 和 $invalidElements 传入
+`error-callback="vm.errorCallback($errors, $invalidElements)"`
+
+## v2.4.15
+1. Merge PR https://github.com/why520crazy/angular-w5c-validator/pull/62
+1. 添加 `{name}{$数字$}` 命名忽略 `$数字$` , https://github.com/why520crazy/angular-w5c-validator/issues/60
+
 ## v2.4.0
 添加动态元素的验证
 
